@@ -1,3 +1,4 @@
+import type { LaunchedChrome } from 'chrome-launcher';
 import type { Client } from 'chrome-remote-interface';
 
 export interface IHtmlToPdfParams {
@@ -10,4 +11,5 @@ export interface IHtmlToPdfParams {
 
 export interface IGlobalState {
   client: Client | undefined;
+  chrome: LaunchedChrome | undefined;
 }

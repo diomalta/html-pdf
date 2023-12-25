@@ -1,6 +1,6 @@
 # HTML to PDF (WIP)
 
-This project provides an easy way to convert HTML to PDF using Google Chrome. It is designed to be used in a Docker environment.
+This project provides an easy way to convert HTML to PDF using Google Chrome. It is designed to be used in a Docker environment. It is fast because it reuses the same instance of Chrome.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ import Application from '@diomalta/http-server';
 init({ port: 39489 });
 
 // Create a new Application instance
-const app = new Application();
+const app = new Application({ port: 3000 });
 
 // Define a GET route to convert HTML to PDF
 app.get('/html-to-pdf', (req, res) => {

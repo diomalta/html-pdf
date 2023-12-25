@@ -11,15 +11,28 @@ import { IChromeInitParams } from './interfaces/chrome.interface.js';
 import { IGlobalState, IHtmlToPdfParams } from './interfaces/pdf.interface.js';
 
 const state = {
+  chrome: undefined as IGlobalState['chrome'] | undefined,
   client: undefined as IGlobalState['client'] | undefined,
 };
 
 export async function init(options?: IChromeInitParams) {
   try {
-    await connectToChrome(state, options);
+    const { client, chrome } = await connectToChrome(options);
+    state.chrome = chrome;
+    state.client = client;
   } catch (err) {
     console.error(`Couldn't connect to Chrome:\n\n${err}`);
     throw err;
+  }
+}
+
+export async function close() {
+  if (state.client) {
+    await state.client.close();
+  }
+
+  if (state.chrome) {
+    state.chrome.kill();
   }
 }
 
