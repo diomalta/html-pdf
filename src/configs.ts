@@ -1,0 +1,20 @@
+export const configs = {
+  chromeFlags: [
+    '--headless',
+    '--disable-gpu',
+    '--no-sandbox',
+    '--disable-software-rasterizer',
+    '--disable-extensions',
+    '--single-process',
+    '--disable-translate',
+    '--disable-background-networking',
+    '--disable-sync',
+    '--metrics-recording-only',
+    '--disable-default-apps',
+    '--no-first-run',
+  ],
+  chromePath: '/usr/bin/google-chrome',
+  port: 23277,
+  path: `/tmp/${Date.now()}`,
+  timeoutForChrome: 2000,
+};
