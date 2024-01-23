@@ -1,4 +1,4 @@
-# HTML to PDF (WIP)
+# HTML to PDF
 
 This project provides an easy way to convert HTML to PDF using Google Chrome. It is designed to be used in a Docker environment. It is fast because it reuses the same instance of Chrome.
 
