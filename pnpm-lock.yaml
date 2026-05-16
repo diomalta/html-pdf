@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.1.0
     version: 1.1.0
   chrome-remote-interface:
-    specifier: ^0.33.0
-    version: 0.33.0
+    specifier: ^0.34.0
+    version: 0.34.0
 
 devDependencies:
   '@babel/core':
@@ -32,8 +32,8 @@ devDependencies:
     specifier: ^0.2.29
     version: 0.2.29(@swc/core@1.3.101)
   '@types/chrome-remote-interface':
-    specifier: ^0.31.14
-    version: 0.31.14
+    specifier: ^0.34.0
+    version: 0.34.0
   '@types/jest':
     specifier: ^29.5.11
     version: 29.5.11
@@ -2002,10 +2002,10 @@ packages:
       '@babel/types': 7.23.6
     dev: true
 
-  /@types/chrome-remote-interface@0.31.14:
-    resolution: {integrity: sha512-H9hTcLu1y+Ms6GDPXXeGhgxaOSD69yEo674vjJw5EeW1tTwYo8fEkf7A9nWlnO6ArJsS7c41iZeX6mRDQ1LhEw==}
+  /@types/chrome-remote-interface@0.34.0:
+    resolution: {integrity: sha512-4q8pMUvasrAkB7bejGWw5igboAvBz7vJRZq+295yFONGoeN7X/hfq8Mq4vTxUQKnENbR9tqksP8RZsLxlRtsWQ==}
     dependencies:
-      devtools-protocol: 0.0.927104
+      devtools-protocol: 0.0.1173815
     dev: true
 
   /@types/cookiejar@2.1.5:
@@ -2612,8 +2612,8 @@ packages:
       - supports-color
     dev: false
 
-  /chrome-remote-interface@0.33.0:
-    resolution: {integrity: sha512-tv/SgeBfShXk43fwFpQ9wnS7mOCPzETnzDXTNxCb6TqKOiOeIfbrJz+2NAp8GmzwizpKa058wnU1Te7apONaYg==}
+  /chrome-remote-interface@0.34.0:
+    resolution: {integrity: sha512-rTTcTZ3zemx8I+nvBii7d8BAF0Ms8LLEroypfvwwZOwSpyNGLE28nStXyCA6VwGp2YSQfmCrQH21F/E+oBFvMw==}
     hasBin: true
     dependencies:
       commander: 2.11.0
@@ -2919,8 +2919,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /devtools-protocol@0.0.927104:
-    resolution: {integrity: sha512-5jfffjSuTOv0Lz53wTNNTcCUV8rv7d82AhYcapj28bC2B5tDxEZzVb7k51cNxZP2KHw24QE+sW7ZuSeD9NfMpA==}
+  /devtools-protocol@0.0.1173815:
+    resolution: {integrity: sha512-CmsjkudmgCMeae8FSJB4GV8COZwOk6dJKyE9HS2F/ih/sA8uTdbPKHg5F7DsrOYLEET/QKK00LJCU4YoyG+uHg==}
     dev: true
 
   /dezalgo@1.0.4:
